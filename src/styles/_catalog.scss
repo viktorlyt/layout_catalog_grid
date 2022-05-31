@@ -1,11 +1,12 @@
-@mixin mediator ($min-width, $colomns) {
+@mixin mediator ($min-width, $columns) {
   @media (min-width: $min-width) {
-    grid-template-columns: repeat($colomns, 200px);
+    grid-template-columns: repeat($columns, 200px);
   }
 }
 
 .catalog {
   display: grid;
+  grid-template-columns: 200px;
   gap: 48px;
   justify-content: center;
 
@@ -17,7 +18,6 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    width: 200px;
     height: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
